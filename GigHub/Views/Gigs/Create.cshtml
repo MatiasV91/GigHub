@@ -4,14 +4,15 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Create</h2>
-<form>
+<h2>Add a gig</h2>
+@using (Html.BeginForm("Create", "Gigs"))
+{
     <div class="form-group">
         @Html.LabelFor(m => m.Venue)
         @Html.TextBoxFor(m => m.Venue, new { @class = "form-control" })
-    </div>          
+    </div>
     <div class="form-group">
-        @Html.LabelFor(m => m.Date )
+        @Html.LabelFor(m => m.Date)
         @Html.TextBoxFor(m => m.Date, new { @class = "form-control" })
     </div>
     <div class="form-group">
@@ -23,5 +24,6 @@
         @Html.DropDownListFor(m => m.Genre, new SelectList(Model.Genres, "Id", "Name"), "", new { @class = "form-control" })
     </div>
     <button type="submit" class="btn btn-primary">Save</button>
-</form>
+}
+
 
