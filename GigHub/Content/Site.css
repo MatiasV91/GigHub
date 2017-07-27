@@ -31,7 +31,24 @@ textarea {
 }
 
 
-
+.voffset{ 
+    margin-top: 2px;
+}
+.voffset1 {
+    margin-top: 5px;
+}
+.voffset2 {
+    margin-top: 10px;
+}
+.voffset3 {
+    margin-top: 20px;
+}
+.voffset4 {
+    margin-top: 40px;
+}
+.voffset5 {
+    margin-top: 80px;
+}
 
 /*Bootstrap Overrides*/
 
@@ -64,8 +81,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .btn {
-    font-size: 17px;
-    padding: 7px 20px;
+    /*font-size: 17px;
+    padding: 7px 20px;*/
     border-radius: 9px;
 }
 
@@ -110,8 +127,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .gigs > li .details{
     position:absolute;
     top:0;
-    left:70px;
-
+    left:80px;
 }
 
     .gigs > li .details .artist{
