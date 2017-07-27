@@ -40,6 +40,22 @@ namespace GigHub.Controllers
             return View("Gigs",viewModel);
         }
 
+        [Authorize]
+        public ActionResult Following()
+        {
+            var userId = User.Identity.GetUserId();
+            var followign = _context.Followings.Include(f => f.Followee).Where(f => f.FollowerId == userId);
+            return View(followign);
+        }
+
+        [Authorize]
+        public ActionResult Mine()
+        {
+            var userId = User.Identity.GetUserId();
+            var gigs = _context.Gig.Include(g =>g.Genre).Where(g => g.ArtistId == userId && g.DateTime > DateTime.Now).ToList();
+
+            return View(gigs);
+        }
 
         [Authorize]
         public ActionResult Create()
@@ -74,7 +90,7 @@ namespace GigHub.Controllers
             _context.Gig.Add(gig);
             _context.SaveChanges();
 
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Mine", "Gigs");
         }
     }
 }

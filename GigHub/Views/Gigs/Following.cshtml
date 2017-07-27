@@ -1,0 +1,14 @@
+﻿@model IEnumerable<GigHub.Models.Following>
+
+@{
+    ViewBag.Title = "Following";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Following</h2>
+
+
+@foreach(var follow in Model)
+{
+    <li>@follow.Followee.Name</li>
+}
