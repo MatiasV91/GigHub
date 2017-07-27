@@ -76,7 +76,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .form-control {
     font-size: 17px;
-    padding: 20px 15px;
+    height:44px;
     border-radius: 9px;
 }
 
@@ -137,3 +137,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     .gigs > li .details .genre {
         font-size:15px;
     }
+
+.gig > li .actions{
+    font-size:15px;
+    display:none;
+}
+.gig > li:hover .actions{
+    display:block;
+}
