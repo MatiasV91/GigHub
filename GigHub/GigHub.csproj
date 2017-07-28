@@ -199,10 +199,22 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\AttendancesController.cs" />
-    <Compile Include="Controllers\FollowingsController.cs" />
+    <Compile Include="Controllers\Api\GigsController.cs" />
+    <Compile Include="Controllers\Api\AttendancesController.cs" />
+    <Compile Include="Controllers\Api\FollowingsController.cs" />
     <Compile Include="Controllers\GigsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Migrations\201707281214093_AddIscanceledTOGig.cs" />
+    <Compile Include="Migrations\201707281214093_AddIscanceledTOGig.Designer.cs">
+      <DependentUpon>201707281214093_AddIscanceledTOGig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707281717459_AddNotification.cs" />
+    <Compile Include="Migrations\201707281717459_AddNotification.Designer.cs">
+      <DependentUpon>201707281717459_AddNotification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Notification.cs" />
+    <Compile Include="Models\NotificationType.cs" />
+    <Compile Include="Models\UserNotification.cs" />
     <Compile Include="ViewModels\GigsViewModel.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Dtos\AttendanceDto.cs" />
@@ -266,6 +278,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Scripts\bootbox.js" />
+    <Content Include="Scripts\bootbox.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
@@ -365,6 +379,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201707262106154_addFollowing.resx">
       <DependentUpon>201707262106154_addFollowing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707281214093_AddIscanceledTOGig.resx">
+      <DependentUpon>201707281214093_AddIscanceledTOGig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707281717459_AddNotification.resx">
+      <DependentUpon>201707281717459_AddNotification.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
