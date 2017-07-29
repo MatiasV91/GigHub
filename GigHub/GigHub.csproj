@@ -220,7 +220,7 @@
     <Compile Include="Migrations\201707281717459_AddNotification.Designer.cs">
       <DependentUpon>201707281717459_AddNotification.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\AutoMapperProfile.cs" />
+    <Compile Include="App_Start\AutoMapperProfile.cs" />
     <Compile Include="Models\Notification.cs" />
     <Compile Include="Models\NotificationType.cs" />
     <Compile Include="Models\UserNotification.cs" />

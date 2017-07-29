@@ -1,12 +1,13 @@
 ﻿using AutoMapper;
 using GigHub.Dtos;
+using GigHub.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace GigHub.Models
-{
+namespace GigHub.App_Start
+{ 
     public class AutomapperProfile : Profile
     {
         public AutomapperProfile()

@@ -1,4 +1,4 @@
-﻿using GigHub.Models;
+﻿using GigHub.App_Start;
 using System;
 using System.Collections.Generic;
 using System.Linq;
