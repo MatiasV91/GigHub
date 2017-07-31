@@ -50,6 +50,19 @@ textarea {
     margin-top: 80px;
 }
 
+
+.navbar-inverse .notification {
+    position: relative;
+}
+
+.navbar-inverse .notification .badge {
+    position: absolute;
+    top:8px;
+    right:0;
+    background:#a80a0a;
+}
+
+
 /*Bootstrap Overrides*/
 
 .navbar-inverse {
@@ -88,6 +101,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
     background-color: rgba(205, 40, 39, 0.35);
+}
+
+.form-control {  
+    transition: none;
 }
 
 
@@ -144,4 +161,27 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 .gig > li:hover .actions{
     display:block;
+}
+
+.popover-notification ul .notifications {
+    list-style: none;
+    padding-left: 0;
+}
+
+.popover-notification ul .notifications > li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+.popover-notification ul .notifications > li:last-child {
+    border-bottom: none;
+}
+.popover-notification .popover-content{
+    padding:0;
+}
+.popover-notification ul.notifications .highlight {
+    font-weight: bold;
+}
+
+#searchGigs {
+    width: 300px;
 }

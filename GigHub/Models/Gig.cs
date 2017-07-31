@@ -65,5 +65,15 @@ namespace GigHub.Models
             Venue = venue;
 
         }
+
+        public bool IsAttending(string user)
+        {
+            foreach(var attendee in Attendances)
+            {
+                if (attendee.AttendeeId == user) { return true; }
+            }
+            return false;
+        }
+
     }
 }
