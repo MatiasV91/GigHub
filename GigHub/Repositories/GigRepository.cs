@@ -7,7 +7,7 @@ using System.Web;
 
 namespace GigHub.Repositories
 {
-    public class GigRepository
+    public class GigRepository : IGigRepository
     {
         private ApplicationDbContext _context;
         public GigRepository(ApplicationDbContext context)
@@ -15,6 +15,11 @@ namespace GigHub.Repositories
             _context = context;
         }
         
+        public void Add(Gig gig)
+        {
+            _context.Gig.Add(gig);
+        }
+
         public IEnumerable<Gig> GetGigsUserAttending(string userId)
         {
             return _context.Attendances
