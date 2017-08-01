@@ -1,5 +1,6 @@
 ﻿var GigsController = function (attendanceService) {
     var button;
+
     var init = function (container) {
         $(container).on("click", ".js-toggle-attendance", toggleAttendance);
     };
