@@ -16,6 +16,16 @@ namespace GigHub.Persistence.Repositories
             _context = context;
         }
 
+        public void Add(Attendance attendance)
+        {
+            _context.Attendances.Add(attendance);
+        }
+
+        public void Remove(Attendance attendance)
+        {
+            _context.Attendances.Remove(attendance);
+        }
+
         public IEnumerable<Attendance> GetFutureAttendances(string userId)
         {
             return _context.Attendances
@@ -24,7 +34,8 @@ namespace GigHub.Persistence.Repositories
         }
         public Attendance GetAttendance(int gigId, string userId)
         {
-            return _context.Attendances.SingleOrDefault(a => a.GigId == gigId && a.AttendeeId == userId);
+            return _context.Attendances
+                .SingleOrDefault(a => a.GigId == gigId && a.AttendeeId == userId);
         }
     }
 }

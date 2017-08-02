@@ -17,6 +17,16 @@ namespace GigHub.Persistence.Repositories
             _context = context;
         }
 
+        public void Add(Following following)
+        {
+            _context.Followings.Add(following);
+        }
+
+        public void Remove(Following following)
+        {
+            _context.Followings.Remove(following);
+        }
+
         public IEnumerable<Following> GetFollowings(string userId)
         {
             return _context.Followings.Include(f => f.Followee).Where(f => f.FollowerId == userId);
