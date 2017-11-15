@@ -65,7 +65,7 @@ namespace GigHub.Core.ViewModels
     public class RegisterViewModel
     {
         [Required]
-        [Display(Name = "Band Name")]
+        [Display(Name = "Band Name or UserName")]
         [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 1)]
         public string Name { get; set; }
 

@@ -21,7 +21,9 @@
 </div>
 
 
-<h4>Performing at @Model.Gig.Venue on @Model.Gig.DateTime.ToString("d MMM") at @Model.Gig.DateTime.ToString("HH:mm")</h4>
+<h3>Performing at @Model.Gig.Venue <br /> 
+    @Model.Gig.DateTime.ToString("d MMM yyyy") <br />
+    at @Model.Gig.DateTime.ToString("HH:mm")</h3>
 
 @if (User.Identity.IsAuthenticated && Model.IsAttending)
 {
