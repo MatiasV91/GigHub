@@ -165,22 +165,22 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     display:block;
 }
 
-.popover-notification ul .notifications {
-    list-style: none;
+.notifications {
+    list-style-type: none;
     padding-left: 0;
 }
 
-.popover-notification ul .notifications > li {
+.notifications > li {
     border-bottom: 1px solid #ddd;
     padding: 10px;
 }
-.popover-notification ul .notifications > li:last-child {
+.notifications > li:last-child {
     border-bottom: none;
 }
 .popover-notification .popover-content{
     padding:0;
 }
-.popover-notification ul.notifications .highlight {
+ul.notifications .highlight {
     font-weight: bold;
 }
 

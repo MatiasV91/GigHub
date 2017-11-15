@@ -53,6 +53,7 @@ namespace GigHub.App_Start
                 {
                     x.FromThisAssembly().SelectAllClasses().BindDefaultInterface();
                 });
+
                 GlobalConfiguration.Configuration.DependencyResolver = new NinjectResolver(kernel);
                 return kernel;
             }

@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using GigHub.Core.Models;
 using GigHub.Persistence.EntityConfigurations;
+using GigHub.Core;
 
 namespace GigHub.Persistence
 {
@@ -44,7 +45,7 @@ namespace GigHub.Persistence
         }
     }
 
-    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
+    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>, IApplicationDbContext
     {
         public DbSet<Attendance> Attendances { get; set; }
         public DbSet<Gig> Gig { get; set; }
