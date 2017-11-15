@@ -1,6 +1,7 @@
 # GigHub
 
 Completamente en Ingles - Segun "Become a Full-stack .NET Developer - Pluralsight" por Mosh Hamedani
+
 Creacion de conciertos, seguimiento conciertos y bandas, avisos de modificaciones
 
 
